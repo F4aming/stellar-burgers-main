@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: stellar-burgers
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:server
+    envVars:
+      - key: NODE_ENV
+        value: production
+
